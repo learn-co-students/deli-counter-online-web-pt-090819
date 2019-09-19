@@ -16,6 +16,7 @@ describe 'Deli Counter' do
 
     context "there are people in line" do
       it "should display the current line" do
+          "There is nobody waiting to be served!" do
         expect($stdout).to receive(:puts).with("The line is currently: 1. Logan 2. Avi 3. Spencer")
         line(other_deli)
       end
