@@ -1,4 +1,5 @@
-describe 'Deli Counter' do
+
+    enddescribe 'Deli Counter' do
 
   let(:katz_deli) { [] }
   let(:other_deli) { ["Logan", "Avi", "Spencer"] }
@@ -12,7 +13,6 @@ describe 'Deli Counter' do
         expect($stdout).to receive(:puts).with("The line is currently empty.")
         line(katz_deli)
       end
-    end
 
     context "there are people in line" do
       it "should display the current line" do
